@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fst food shop</title>
+</head>
+<body>
+    <script>
+const order = prompt(`Enter Number to choose an item:
+1. Burger
+2. Sandwich
+3. Pizza
+4. tikka
+5. broast
+6. karahi`);
+let price = 0; 
+if (order == 1) {  
+  let burger = prompt(`Enter Number to choose a burger:
+1. Zinger Burger (Price: 500rs)
+2. Zinger Cheese Burger (Price: 600rs)
+3. Chicken Burger (Price: 450rs)
+4. Beef Burger (Price: 550rs)`);
+  if (burger == 1) {
+    price = 500;  
+  } else if (burger == 2) {
+    price = 600;  
+  } else if (burger == 3) {
+    price = 450;  
+  } else if (burger == 4) {
+    price = 550;  
+  }
+  let confirmation = prompt(`You selected a burger costing ${price}rs. Do you want to confirm the order?
+1. Yes
+2. No`);
+  if (confirmation == 1) {
+    alert(`Thank you very much! Your total amount is ${price}rs.`);
+  } else {
+    const order = prompt(`Enter Number to choose an item:
+  1. Burger
+2. Sandwich
+3. Pizza
+4. tikka
+5. broast
+6. karahi`);
+  }
+} else if (order == 2) {  
+  let sandwich = prompt(`Enter Number to choose a sandwich:
+1. Veg Sandwich (Price: 300rs)
+2. Chicken Sandwich (Price: 350rs)
+3. Tuna Sandwich (Price: 400rs)`);
+  if (sandwich == 1) {
+    price = 300;  
+  } else if (sandwich == 2) {
+    price = 350;  
+  } else if (sandwich == 3) {
+    price = 400;  
+  }
+  let confirmation = prompt(`You selected a sandwich costing ${price}rs. Do you want to confirm the order?
+1. Yes
+2. No`);
+  if (confirmation == 1) {
+    alert(`Thank you very much! Your total amount is ${price}rs.`);
+  } else {  
+    const order = prompt(`Enter Number to choose an item:
+  1. Burger
+2. Sandwich
+3. Pizza
+4. tikka
+5. broast
+6. karahi`);
+  }
+} else if (order == 3){
+    let pizza = prompt (`enter a verity of pizza:
+    1.cheese pizza(price: 500rs)
+    2.chicken pizza(price: 1000rs)
+    3.beef pizza(price: 1500rs)`);
+    if( pizza == 1){
+        price = 400;
+    } else if (pizza == 2){
+           price = 800;
+    } else if ( pizza == 3){
+        price = 1200;
+    }
+    let confirmation = prompt (`You selected a pizza costing ${price}rs. Do you want to confirm the order?
+1. Yes
+2. No`);
+
+if (confirmation == 1) {
+    alert(`Thank you very much! Your total amount is ${price}rs.`);
+    }else {
+    const order = prompt(`Enter Number to choose an item:
+  1. Burger
+2. Sandwich
+3. Pizza
+4. tikka
+5. broast
+6. karahi`);
+  }
+  } else if (order == 4){
+    let tikka = prompt(` enter the verity of tikka
+    1.afgani tikka (price: 450rs)
+    2.tandori tikka (price:500rs)
+    3.malai tikka(price:550rs)
+    4.behari tikka(price:650rs)`);
+   if ( tikka == 1 ){
+        price = 450;
+   }else if (tikka == 2){
+    price = 500;
+   }else if (tikka == 3){
+    price = 550;
+   }else if (tikka == 4){
+      price = 650;
+   }
+   let confirmation =  prompt (`You selected a tikka costing ${price}rs. Do you want to confirm the order?
+1. Yes
+2. No`);
+if (confirmation == 1){
+     alert(`Thank you very much! Your total amount is ${price}rs.`)
+}  else {
+   const order = prompt(`Enter Number to choose an item:
+  1. Burger
+2. Sandwich
+3. Pizza
+4. tikka
+5. broast
+6. karahi`);
+  }
+}  else if (order ==5){
+    let broast = prompt(`enter the verty of broast
+    1.chicken chest broast(price:500rs)
+    2.chicken leg broast(price:400rs)
+    `);
+    if( broast == 1){
+        price == 500;
+    }else if( broast = 2){
+        price = 400;
+    }
+    let confirmation = prompt (`You selected a broast costing ${price}rs. Do you want to confirm the order?
+1. Yes
+2. No`);
+ if ( confirmation == 1){
+    alert(`Thank you very much! Your total amount is ${price}rs.`)
+} else{
+    const order = prompt(`Enter Number to choose an item:
+   1. Burger
+2. Sandwich
+3. Pizza
+4. tikka
+5. broast
+6. karahi`);
+} } else if (order == 6) {
+    let karahi = prompt(`Enter the type of Karahi:
+    1. Chicken Karahi (700rs)
+    2. Mutton Karahi (1050rs)
+    3. Beef Karahi (900rs)`);
+    let price;
+    if (karahi == 1) {
+        let kg = prompt("Which kg?");
+        price = 700 * kg; 
+        alert("The total price is: " + price + "rs");
+    } else if (karahi == 2) {
+        let kg = prompt("Which kg?");
+        price = 1050 * kg; 
+        alert("The total price is: " + price + "rs");
+    } else if (karahi == 3) {
+        let kg = prompt("Which kg?");
+        price = 900 * kg; 
+        alert("The total price is: " + price + "rs");
+    }   let confirmation = prompt (`You selected a karahi costing ${price}rs. Do you want to confirm the order?
+1. Yes
+2. No`);
+ if ( confirmation == 1){
+    alert(`Thank you very much! Your total amount is ${price}rs.`)
+} else{
+    const order = prompt(`Enter Number to choose an item:
+   1. Burger
+2. Sandwich
+3. Pizza
+4. tikka
+5. broast
+6. karahi`);
+}
+}
+else {
+  alert("Invalid selection. Please refresh the page to try again.");
+}
+
+    </script>
+</body>
+</html>
